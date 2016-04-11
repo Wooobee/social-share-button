@@ -16,6 +16,7 @@ module SocialShareButton
         html << link_to("","#", {:rel => ["nofollow", rel],
                                   "data-site" => name,
                                   :class => "social-share-button-#{name}",
+                                  :class => "ssb",
                                   :onclick => "return SocialShareButton.share(this);",
                                   :title => h(link_title)}.merge(extra_data).merge(special_data))
       end
